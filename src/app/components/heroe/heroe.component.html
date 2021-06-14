@@ -1,0 +1,17 @@
+<h1 class="animated fadeIn">{{heroe.nombre}} <small>({{heroe.aparicion}})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+    <div class="col-md-4">
+        <img [src]="heroe.img" class="img-fluid" [alt]="heroe.nombre">
+        <br><br>
+
+        <button (click)="Regresar()" type="button" class="btn btn-outline-danger" style="width: 100%"> Regresar.</button>
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{heroe.nombre}}</h3>
+        <p>{{heroe.bio}}</p>
+        <img [src]="heroe.casa==='DC' ? dc : marvel" class="img-logo" [alt]="heroe.casa">
+    </div>
+</div>
